@@ -10,6 +10,7 @@
     <RootNamespace>Mono.Debugging.Soft</RootNamespace>
     <AssemblyName>Mono.Debugging.Soft</AssemblyName>
     <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Mono.Debugging\mono.debugging.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -22,7 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>1591;1573</NoWarn>
-    <DocumentationFile>../../../bin/Mono.Debugging.Soft.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\Mono.Debugging.Soft.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -109,16 +110,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\wmono.cecil.csproj">
+    <ProjectReference Include="..\..\cecil\Mono.Cecil.csproj">
+      <Project>{82aef3d1-0fd9-4fce-bb72-ae1343ea6845}</Project>
       <Name>Mono.Cecil</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\wnrefactory.csproj">
+    <ProjectReference Include="..\..\g\g.csproj">
       <Project>{162fc016-f240-4af7-810a-b50885e33853}</Project>
-      <Name>wnrefactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\wnrefactory.csharp.csproj">
-      <Project>{162fc016-f240-4af7-810a-b50885e33854}</Project>
-      <Name>wnrefactory.csharp</Name>
+      <Name>g</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono.Debugger.Soft\Mono.Debugger.Soft.csproj">
       <Project>{372e8e3e-29d5-4b4d-88a2-4711cd628c4e}</Project>
