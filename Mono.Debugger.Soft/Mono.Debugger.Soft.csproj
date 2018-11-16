@@ -124,8 +124,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\cecil\Mono.Cecil.csproj">
-      <Project>{82aef3d1-0fd9-4fce-bb72-ae1343ea6845}</Project>
+    <ProjectReference Include="..\..\wmono.cecil.csproj">
       <Name>Mono.Cecil</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\wnrefactory.csharp.csproj">
