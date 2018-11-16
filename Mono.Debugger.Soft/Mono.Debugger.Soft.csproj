@@ -10,14 +10,12 @@
     <RootNamespace>Mono.Debugger.Soft</RootNamespace>
     <AssemblyName>Mono.Debugger.Soft</AssemblyName>
     <SignAssembly>True</SignAssembly>
-
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
-
     <OutputPath>../../../bin</OutputPath>
     <DefineConstants>MONO_DATACONVERTER_STATIC_METHODS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -130,7 +128,6 @@
       <Project>{82aef3d1-0fd9-4fce-bb72-ae1343ea6845}</Project>
       <Name>Mono.Cecil</Name>
     </ProjectReference>
-<<<<<<< HEAD
     <ProjectReference Include="..\..\wnrefactory.csharp.csproj">
       <Project>{162fc016-f240-4af7-810a-b50885e33854}</Project>
       <Name>wnrefactory.csharp</Name>
@@ -138,19 +135,10 @@
     <ProjectReference Include="..\..\wnrefactory.csproj">
       <Project>{162fc016-f240-4af7-810a-b50885e33853}</Project>
       <Name>wnrefactory</Name>
-=======
-    <ProjectReference Include="..\..\g\g.csproj">
-      <Project>{162fc016-f240-4af7-810a-b50885e33853}</Project>
-      <Name>g</Name>
->>>>>>> 326c1a361c814bfdb363b3d27c96afa7378d2531
     </ProjectReference>
     <ProjectReference Include="..\Mono.Debugging\Mono.Debugging.csproj">
       <Project>{90c99adb-7d4b-4eb4-98c2-40bd1b14c7d2}</Project>
       <Name>Mono.Debugging</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
 </Project>
-=======
-</Project>
->>>>>>> 326c1a361c814bfdb363b3d27c96afa7378d2531

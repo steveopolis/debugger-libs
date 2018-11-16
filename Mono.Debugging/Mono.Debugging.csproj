@@ -26,7 +26,7 @@
       <Execution clr-version="Net_2_0" />
     </Execution>
     <NoWarn>1591;1573</NoWarn>
-    <DocumentationFile>bin\Debug\Mono.Debugging.xml</DocumentationFile>
+    <DocumentationFile>../../../bin/Mono.Debugging.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -133,9 +133,13 @@
     <Compile Include="Mono.Debugging.Evaluation\LambdaBodyOutputVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\g\g.csproj">
+    <ProjectReference Include="..\..\wnrefactory.csharp.csproj">
+      <Project>{162fc016-f240-4af7-810a-b50885e33854}</Project>
+      <Name>wnrefactory.csharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wnrefactory.csproj">
       <Project>{162fc016-f240-4af7-810a-b50885e33853}</Project>
-      <Name>g</Name>
+      <Name>wnrefactory</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\Mono.Debugging.settings" />
